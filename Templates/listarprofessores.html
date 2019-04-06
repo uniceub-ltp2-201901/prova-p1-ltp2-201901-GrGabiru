@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>professores</title>
+</head>
+Lista de Professores
+<body>
+<table border="1">
+    <tr><th>Nome</th></tr>
+
+{% for nome in nomes %}
+            <tr>
+                <td><a href="/exibirprofessor/{{nome[0]}}">{{nome[0]}}</a></td>
+                <td>{{nome[1]}}</td>
+                <td>{{nome[2]}}</td>
+            </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
